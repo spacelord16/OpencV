@@ -1,0 +1,11 @@
+[
+    {
+        "label": "opencv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "opencv",
+        "description": "opencv",
+        "detail": "opencv",
+        "documentation": {}
+    }
+]
