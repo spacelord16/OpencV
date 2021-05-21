@@ -1,11 +1,29 @@
 [
     {
-        "label": "opencv",
+        "label": "cv2",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "opencv",
-        "description": "opencv",
-        "detail": "opencv",
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    width = int(cap.get(3))\n    height = int(cap.get(4))\n    image = np.zeros(frame.shape, np.uint8)\n    smaller_frame = cv2.resize(frame, (0,0) , fx = 0.5, fy=0.5)\n    image[:height//2, width//2:] = smaller_frame\n    image[height//2:, :width//2] = smaller_frame\n    image[:height//2, width//2:] = smaller_frame",
+        "detail": "main",
         "documentation": {}
     }
 ]
